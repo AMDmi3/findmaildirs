@@ -53,8 +53,10 @@ void checkdir(const char* path, const char* prefix) {
 }
 
 int main(int argc, char** argv) {
-	if (argc <= 1)
-		errx(1, "usage: %s dir\n", argv[0]);
+	if (argc <= 1) {
+		fprintf(stderr, "usage: %s dir\n", argv[0]);
+		return 1;
+	}
 
 	checkdir(argv[1], NULL);
 

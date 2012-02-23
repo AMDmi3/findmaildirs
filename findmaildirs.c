@@ -15,7 +15,7 @@ void checkdir(const char* path, const char* prefix) {
 	char fullprefix[FILENAME_MAX];
 
 	if ((d = opendir(path)) == NULL)
-		err(1, "opendir");
+		err(1, "opendir(%s)", path);
 
 	while ((de = readdir(d)) != NULL) {
 		if (de->d_name[0] == '.') {
@@ -28,7 +28,7 @@ void checkdir(const char* path, const char* prefix) {
 		snprintf(fullpath, sizeof(fullpath), "%s/%s", path, de->d_name);
 
 		if (stat(fullpath, &st) != 0)
-			err(1, "stat");
+			err(1, "stat(%s)", fullpath);
 
 		if (!S_ISDIR(st.st_mode))
 			continue;

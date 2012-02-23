@@ -27,7 +27,7 @@ void checkdir(const char* path, const char* prefix) {
 
 		snprintf(fullpath, sizeof(fullpath), "%s/%s", path, de->d_name);
 
-		if (stat(fullpath, &st) != 0)
+		if (lstat(fullpath, &st) != 0)
 			err(1, "stat(%s)", fullpath);
 
 		if (!S_ISDIR(st.st_mode))

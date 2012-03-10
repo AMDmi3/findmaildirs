@@ -2,6 +2,7 @@ CC?=		gcc
 CFLAGS?=	# empty
 CFLAGS+=	-Wall -Wextra
 
+DESTDIR?=	# empty
 PREFIX?=	/usr/local
 
 PROGRAM=	findmaildirs
@@ -19,4 +20,5 @@ clean:
 	rm -f ${PROGRAM}
 
 install: ${PROGRAM}
-	${BSD_INSTALL_PROGRAM} ${PROGRAM} ${PREFIX}/bin/
+	mkdir -p ${DESTDIR}/${PREFIX}/bin
+	${BSD_INSTALL_PROGRAM} ${PROGRAM} ${DESTDIR}/${PREFIX}/bin/

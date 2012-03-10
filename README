@@ -61,7 +61,7 @@ Usecase
 Installation
 ============
 
-  No required dependencies. Just type
+  No required library dependencies. Just type
 
     make && make install
 

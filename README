@@ -55,8 +55,8 @@ Usecase
    
   Though it's extremely simple task and you could use simple `find | sed`
   pipeline instead, this utility acts a bit more clever and doesn't descend
-  into subdirectories of mailboxes (cur, new and tmp) which will noticeably
-  slow down mutt startup if there are many files in them.
+  into subdirectories of mailboxes (cur, new and tmp) which may noticeably
+  slow down mutt startup if there are many mail messages.
 
 Installation
 ============

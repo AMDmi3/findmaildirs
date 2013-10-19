@@ -20,5 +20,5 @@ clean:
 	rm -f ${PROGRAM}
 
 install: ${PROGRAM}
-	mkdir -p ${DESTDIR}/${PREFIX}/bin
-	${BSD_INSTALL_PROGRAM} ${PROGRAM} ${DESTDIR}/${PREFIX}/bin/
+	mkdir -p ${DESTDIR}${PREFIX}/bin
+	${BSD_INSTALL_PROGRAM} ${PROGRAM} ${DESTDIR}${PREFIX}/bin/

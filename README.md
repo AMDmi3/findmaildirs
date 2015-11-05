@@ -47,8 +47,8 @@ mailboxes +inbox +sent +maillists/lkml +maillists/freebsd/ports \
           +maildirs/freebsd/announce
 ```
 
-it's a pain to manage manually, especially of you have many maildirs
-and even more painful if you have maildirs created automatically
+it's a pain to manage manually, especially of you have many mailboxes
+and even more painful if you have mailboxes created automatically
 by e.g. procmail.
 
 This little utility manages it for you so you can just use:
@@ -62,10 +62,9 @@ pipeline instead, this utility acts a bit more clever and doesn't descend
 into subdirectories of mailboxes (cur, new and tmp) which may noticeably
 slow down mutt startup if there are many mail messages.
 
-
 ## Installation ##
 
-No required library dependencies. Just type
+No required library dependencies. Just run
 
 ```
 make && make install

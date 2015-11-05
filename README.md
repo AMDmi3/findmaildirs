@@ -72,10 +72,14 @@ make && make install
 
 Makefile honours CC, CFLAGS, PREFIX (/usr/local by default) and DESTDIR.
 
-## License ##
-
-2-clause BSD, see COPYING.
-
 ## Author ##
 
 * [Dmitry Marakasov](https://github.com/AMDmi3) <amdmi3@amdmi3.ru>
+
+## Contributors ##
+
+* [Pierre-Yves Chibon](https://github.com/pypingou)
+
+## License ##
+
+2-clause BSD, see COPYING.

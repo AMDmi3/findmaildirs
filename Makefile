@@ -9,7 +9,7 @@ PROGRAM=	findmaildirs
 SOURCES=	findmaildirs.c
 
 # for compatibility with FreeBSD ports
-BSD_INSTALL_PROGRAM?=	install -s -m 555
+BSD_INSTALL_PROGRAM?=	install -m 555
 
 all: ${PROGRAM}
 

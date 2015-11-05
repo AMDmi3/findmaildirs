@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012 Dmitry Marakasov <amdmi3@amdmi3.ru>
+ * Copyright (c) 2012-2015 Dmitry Marakasov <amdmi3@amdmi3.ru>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

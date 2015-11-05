@@ -1,8 +1,6 @@
 CC?=		gcc
-CFLAGS?=	# empty
-CFLAGS+=	-Wall -Wextra
+CFLAGS+=	-Wall -Wextra -pedantic
 
-DESTDIR?=	# empty
 PREFIX?=	/usr/local
 
 PROGRAM=	findmaildirs

@@ -59,11 +59,8 @@ void checkdir(const char* path, const char* prefix) {
 		if (!S_ISDIR(st.st_mode))
 			continue;
 
-		if (strcmp(de->d_name, "cur") == 0 || strcmp(de->d_name, "new") == 0 || strcmp(de->d_name, "tmp") == 0) {
+		if (strcmp(de->d_name, "cur") == 0) {
 			printf("+%s ", prefix);
-			if (closedir(d) != 0)
-				errx(1, "closedir");
-			return;
 		} else {
 			if (prefix == NULL)
 				snprintf(fullprefix, sizeof(fullprefix), "%s", de->d_name);

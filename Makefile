@@ -14,7 +14,7 @@ BSD_INSTALL_PROGRAM?=	install -m 555
 all: ${PROGRAM}
 
 ${PROGRAM}: ${SOURCES}
-	${CC} ${CFLAGS} ${SOURCES} -o ${PROGRAM}
+	${CC} ${CFLAGS} ${LDFLAGS} ${SOURCES} -o ${PROGRAM}
 
 clean: cleantest
 	rm -f ${PROGRAM}

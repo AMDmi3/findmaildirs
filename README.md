@@ -1,5 +1,8 @@
 # findmaildirs #
 
+[![Build Status](https://travis-ci.org/AMDmi3/findmaildirs.svg?branch=master)](https://travis-ci.org/AMDmi3/findmaildirs)
+[![FreeBSD package](http://repology.org/badge/version-for-repo/freebsd/findmaildirs.svg)](http://repology.org/metapackage/findmaildirs)
+
 This is a very simple utility to be used with mutt to simplify automatic
 mailboxes management.
 
